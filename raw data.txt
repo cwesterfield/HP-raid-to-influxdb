@@ -1,0 +1,12 @@
+logicaldrive 1 273.4 GB: RAID 1+0: OK
+logicaldrive 2 111.8 GB: RAID 0: OK
+
+bay 1: 146 GB: OK
+bay 2: 146 GB: OK
+bay 3: 146 GB: OK
+bay 4: 146 GB: OK
+bay 5: 120 GB: OK
+
+Controller Status: OK
+Cache Status: Temporarily Disabled
+Battery/Capacitor Status: Failed (Replace Batteries/Capacitors)

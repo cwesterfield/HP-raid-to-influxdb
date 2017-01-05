@@ -4,7 +4,7 @@
 HPACUCLI=`which hpacucli`
 HPACUCLI_RAW=/tmp/hpacucli.raw
 HPACUCLI_CLN=/tmp/hpacucli.log
-
+TIME=`date +%s`
 
 ##Create flat file
 echo "@LOGICALDRIVEINFO@" > $HPACUCLI_RAW
@@ -18,7 +18,7 @@ $HPACUCLI ctrl all show status >> $HPACUCLI_RAW
 awk 'NF' $HPACUCLI_RAW | sed -e 's/^[ \t]*//' | grep -v 410i > $HPACUCLI_CLN
 
 ##Split Flat file into chunks
-
+#echo $TIME
 #Logical Drives
 cat $HPACUCLI_CLN | grep logicaldrive | tr -d '()' | sed 's/\,/:/g'
 
