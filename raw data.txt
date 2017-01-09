@@ -1,10 +1,11 @@
-logical,host=hp_380_g6,log_num='logicaldrive 1 273.4 GB',raid='RAID 1+0',status='OK'
-logical,host=hp_380_g6,log_num='logicaldrive 2 111.8 GB',raid='RAID 0',status='OK'
-physical,host=hp_380_g6,bay='bay 1',size='146 GB',status='OK'
-physical,host=hp_380_g6,bay='bay 2',size='146 GB',status='OK'
-physical,host=hp_380_g6,bay='bay 3',size='146 GB',status='OK'
-physical,host=hp_380_g6,bay='bay 4',size='146 GB',status='OK'
-physical,host=hp_380_g6,bay='bay 5',size='120 GB',status='OK'
-controller,host=hp_380_g6,item='Controller Status',status='OK'
-controller,host=hp_380_g6,item='Cache Status',status='Temporarily Disabled'
-controller,host=hp_380_g6,item='Battery/Capacitor Status',status='Failed (Replace Batteries/Capacitors)'
+cwesterfield@server:~# cat /tmp/influx.import
+logical,Host=hp_380_g6,log_num=logicaldrive\ 1\ 273.4\ GB\  Raid="RAID 1+0",Status="OK"
+logical,Host=hp_380_g6,log_num=logicaldrive\ 2\ 111.8\ GB\  Raid="RAID 0",Status="OK"
+physical,Host=hp_380_g6,Bay=bay\ 1  Size="146 GB",Status="OK"
+physical,Host=hp_380_g6,Bay=bay\ 2  Size="146 GB",Status="OK"
+physical,Host=hp_380_g6,Bay=bay\ 3  Size="146 GB",Status="OK"
+physical,Host=hp_380_g6,Bay=bay\ 4  Size="146 GB",Status="OK"
+physical,Host=hp_380_g6,Bay=bay\ 5  Size="120 GB",Status="OK"
+controller,Host=hp_380_g6,Item=Controller\ Status\  Status="OK"
+controller,Host=hp_380_g6,Item=Cache\ Status\  Status="Temporarily Disabled"
+controller,Host=hp_380_g6,Item=Battery/Capacitor\ Status\  Status="Failed (Replace Batteries/Capacitors)"
